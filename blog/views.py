@@ -11,9 +11,9 @@ posts = [
     },
     {
         'author': 'CoreyMS',
-        'title': 'Blog Post 1',
-        'content': 'First Post content',
-        'date_posted': 'August 27, 2018'
+        'title': 'Blog Post 2',
+        'content': 'Second Post content',
+        'date_posted': 'August 29, 2018'
     }
 ]
 
@@ -28,4 +28,4 @@ def home(request):
 
 
 def about(request):
-    return render(request, 'blog/about.html')
+    return render(request, 'blog/about.html', {'title': 'ohohoo'})
